@@ -10,11 +10,3 @@
 2. When we raise the compute loop to 200000, the LED still blinks with the same rhythm. TaskLED has the highest priority and preempts Compute, so its timing holds even if Compute overruns.
 
 3. With period 200 ms and ON 150 ms, the duty cycle is 75%. As ON time approaches the period, the OFF time shrinks to near zero; at ON ≥ period, it overruns and the LED looks almost always on with tiny, irregular off gaps.
-
-
-## Contributors
-
-1. Md Sajib Pramanic
-2. Junaid Khan
-3. Mariya Haider
-4. Abdul Nizer
