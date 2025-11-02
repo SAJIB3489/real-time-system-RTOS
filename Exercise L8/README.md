@@ -2,9 +2,9 @@
 
 This project demonstrates **deadlock conditions** in FreeRTOS running on an **ESP32**, and shows **three practical methods** to resolve them:
 
-1. ✅ **Timeout-based mutex acquisition**  
-2. ✅ **Mutex hierarchy (consistent locking order)**  
-3. ✅ **Arbitrator (global mutex control)**  
+1. **Timeout-based mutex acquisition**  
+2. **Mutex hierarchy (consistent locking order)**  
+3. **Arbitrator (global mutex control)**  
 
 The project helps you **visualize**, **analyze**, and **fix** deadlocks step-by-step.
 
