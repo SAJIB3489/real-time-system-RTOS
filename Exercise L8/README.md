@@ -6,8 +6,6 @@ This project demonstrates **deadlock conditions** in FreeRTOS running on an **ES
 2. **Mutex hierarchy (consistent locking order)**  
 3. **Arbitrator (global mutex control)**  
 
-The project helps you **visualize**, **analyze**, and **fix** deadlocks step-by-step.
-
 ---
 
 ## 🧩 Author
