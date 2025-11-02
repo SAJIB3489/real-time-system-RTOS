@@ -44,19 +44,6 @@ The program demonstrates three resolution strategies by defining a mode at the t
 
 ---
 
-## 🗂️ File Structure
-
-```
-
-ESP32-Deadlock-Demo/
-│
-├── ESP32_Deadlock_Demo.ino     # Main source code
-└── README.md                    # Project documentation
-
-````
-
----
-
 ## 🧪 Deadlock Example
 
 In the **original version**, the following happens:
@@ -140,8 +127,8 @@ xSemaphoreGive(arbitrator);
 ### Step 1️⃣ — Clone the Project
 
 ```bash
-git clone https://github.com/<your-username>/ESP32-Deadlock-Demo.git
-cd ESP32-Deadlock-Demo
+git clone https://github.com/SAJIB3489/real-time-system-RTOS/
+cd Exercise L8
 ```
 
 ### Step 2️⃣ — Open in Arduino IDE
@@ -166,44 +153,6 @@ Upload to your ESP32 and open the Serial Monitor (`115200 baud`).
 You’ll see messages like:
 
 ```
-Task A took mutex 1
-Task B took mutex 2
-Task A took mutex 2
-Task A doing some work
-Task B doing some work
-```
-
-No freezing — the system is deadlock-free 🎉
-
----
-
-## 📊 Comparison Summary
-
-| Method     | Concept                         | Pros                            | Cons                        |
-| ---------- | ------------------------------- | ------------------------------- | --------------------------- |
-| Timeout    | Retry after timeout             | Flexible, adaptive              | Slightly slower             |
-| Hierarchy  | Always take in same order       | Fast, efficient, simple         | Requires global consistency |
-| Arbitrator | Global lock controls all access | Very safe, easy to reason about | Reduces parallelism         |
-
----
-
-## 🧠 Understanding Deadlocks (Quick Theory)
-
-A deadlock occurs when **all four Coffman conditions** are true:
-
-1. **Mutual Exclusion** – Only one task can use a resource at a time
-2. **Hold and Wait** – Task holds one resource and waits for another
-3. **No Preemption** – Resources can’t be forcibly taken away
-4. **Circular Wait** – Tasks form a circular chain waiting on each other
-
-By **breaking any one** of these conditions (e.g., through timeouts, consistent ordering, or an arbitrator), deadlock can be avoided.
-
-
-
-### 🌟 Example Output (Serial Monitor)
-
-```
----FreeRTOS Deadlock Demo (resolved variants)---
 Task A took arbitrator
 Task A took mutex 1
 Task A took mutex 2
@@ -217,5 +166,3 @@ Task B released arbitrator
 Task B doing some work
 Task B going to sleep
 ```
-
-System continues smoothly — **no deadlock!**
