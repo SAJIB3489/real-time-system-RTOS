@@ -54,7 +54,7 @@ This example demonstrates FreeRTOS counting semaphores in two parts:
 
 ```bash
 git clone https://github.com/SAJIB3489/real-time-system-RTOS/
-cd Exercise L6 ISR
+cd Exercise L6 Counting
 ```
 
 ## Usage
