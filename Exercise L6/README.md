@@ -3,6 +3,8 @@
 **Md Sajib Pramanic**
 Project for FreeRTOS learning on ESP32
 
+![image](/Exercise%20L6/Screenshot%20from%202025-11-03%2000-01-05.png)
+
 ---
 # 🔦 ESP32 FreeRTOS Binary Semaphore Demo
 

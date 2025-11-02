@@ -1,5 +1,7 @@
 # 🧠 ESP32 FreeRTOS Deadlock Demonstration & Resolution
 
+![image](/Exercise%20L8/Screenshot%20from%202025-11-02%2023-59-46.png)
+
 This project demonstrates **deadlock conditions** in FreeRTOS running on an **ESP32**, and shows **three practical methods** to resolve them:
 
 1. **Timeout-based mutex acquisition**  
