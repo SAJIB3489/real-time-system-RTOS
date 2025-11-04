@@ -212,51 +212,11 @@ Why the migration happens:
 ---
 
 
+## 🧭 How to Use this Code
 
+### Clone the Project
 
-
-
-
-
-
-
-
-
-
-
-
-### Step 2️⃣ — Open in Arduino IDE
-
-* Open `ESP32_Deadlock_Demo.ino`
-* Set **Board**: `ESP32 Dev Module`
-* Set **Baud Rate**: `115200`
-
-### Step 3️⃣ — Choose a Deadlock Resolution Mode
-
-At the top of the file, uncomment **one** of the following:
-
-```cpp
-//#define MODE_TIMEOUT
-//#define MODE_HIERARCHY
-#define MODE_ARBITRATOR
-```
-
-### Step 4️⃣ — Upload and Monitor
-
-Upload to your ESP32 and open the Serial Monitor (`115200 baud`).
-You’ll see messages like:
-
-```
-Task A took arbitrator
-Task A took mutex 1
-Task A took mutex 2
-Task A released arbitrator
-Task A doing some work
-Task A going to sleep
-Task B took arbitrator
-Task B took mutex 1
-Task B took mutex 2
-Task B released arbitrator
-Task B doing some work
-Task B going to sleep
+```bash
+git clone https://github.com/SAJIB3489/real-time-system-RTOS/
+cd Exercise L9
 ```
